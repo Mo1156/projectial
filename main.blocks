@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="%n/K4iuyhsWO0N{)XIz=">Player</variable><variable type="KIND_SpriteKind" id="2|yH7[eKE!8xEvfh*W7[">Projectile</variable><variable type="KIND_SpriteKind" id="B3tvzC+F]Aexc$dqqZH6">Food</variable><variable type="KIND_SpriteKind" id="eea^LI1=4[@Y9m_qGd9D">Enemy</variable><variable id=")Px05thm2=43|Rc/j_1E">mySprite</variable><variable id="q+a!#M^JxyG(.tAD_mal">player_awesome</variable><variable id="4;2Mmx=F.JOOdB$eWh?@">lemon</variable><variable id="zL~2+b|~mg/*pD`h+ki`">projectile</variable></variables><block type="function_definition" x="-470" y="-1490"><mutation name="background" functionid="]!T1!oVwT%n7Et[/SHd["/><field name="function_name">background</field><statement name="STACK"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">1</field></shadow></value></block></statement></block><block type="pxt-on-start" x="-670" y="-1390"><statement name="HANDLER"><block type="function_call"><mutation name="player" functionid="Y@2~qtqBq1~~1,@aIs4$"/><next><block type="function_call"><mutation name="projectial" functionid="@_6/q}v1(31Ic}Y~}1%?"/><next><block type="function_call"><mutation name="background" functionid="]!T1!oVwT%n7Et[/SHd["/></block></next></block></next></block></statement></block><block type="function_definition" x="-430" y="-1330"><mutation name="player" functionid="Y@2~qtqBq1~~1,@aIs4$"/><field name="function_name">player</field><statement name="STACK"><block type="variables_set"><field name="VAR" id="q+a!#M^JxyG(.tAD_mal">player_awesome</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . f f f f f f f . . . 
+. . . f f f f 7 7 7 7 7 f f . . 
+. . f f 7 7 7 7 7 7 7 7 7 f f f 
+f f f 7 7 7 7 7 . . 7 7 7 7 7 f 
+7 7 7 7 7 7 . . . . . 7 7 7 7 f 
+7 7 7 7 . . . . . . . . . 7 7 f 
+. . . . . . . . . . . . . 7 7 7 
+. . . . . . . . . . . . . 7 7 7 
+7 7 7 7 . . . . . . . . . . 7 7 
+7 7 7 7 7 . . . . . . . . . 7 7 
+f f 7 7 7 7 7 7 . . . . . 7 7 7 
+. f f 7 7 7 7 7 . . . . 7 7 7 7 
+. . f f f f 7 7 7 7 7 7 7 7 7 7 
+. . . . . f f 7 7 7 7 7 7 7 7 f 
+. . . . . . f f f f 7 7 7 7 f f 
+. . . . . . . . . f f f f f f . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="q+a!#M^JxyG(.tAD_mal">player_awesome</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">78</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">101</field></shadow></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="q+a!#M^JxyG(.tAD_mal">player_awesome</field></block></value><value name="vx"><shadow type="math_number"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block></next></block></next></block></statement></block><block type="function_definition" x="-470" y="-1050"><mutation name="projectial" functionid="@_6/q}v1(31Ic}Y~}1%?"/><field name="function_name">projectial</field><statement name="STACK"><block type="variables_set"><field name="VAR" id="zL~2+b|~mg/*pD`h+ki`">projectile</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromside"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 4 4 4 4 4 4 4 4 . . . . 
+. . 4 4 4 5 5 5 5 5 5 4 4 4 . . 
+. 4 4 5 5 5 5 5 5 5 5 5 5 4 4 . 
+. 4 5 5 5 5 5 5 5 5 5 5 5 5 4 4 
+. 4 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+. 4 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+. 4 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+. 4 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+. 4 4 5 5 5 5 5 5 5 5 5 5 5 5 4 
+. . 4 5 5 5 5 5 5 5 5 5 5 5 4 4 
+. . 4 4 4 4 5 5 5 5 5 5 5 5 4 . 
+. . . . . 4 4 4 4 5 5 5 5 4 4 . 
+. . . . . . . . 4 4 4 4 4 4 . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">100</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="zL~2+b|~mg/*pD`h+ki`">projectile</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value></block></next></block></statement></block><block type="gameupdate" x="-630" y="-890"/></xml>
